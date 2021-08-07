@@ -12,7 +12,7 @@ async def on_ready():
     print("디스코드봇 버전 : " + str(discord.__version__))
     print("datetime 버전 : "+str(datetime.__version__))
     print('------')
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("버그널 리턴"))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("Eternal Return"))
 
 @client.event
 async def on_message(message):
