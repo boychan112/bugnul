@@ -20,12 +20,17 @@ async def on_message(message):
     
     if content.startswith("!자기소개"):
         await message.channel.send("응애 나 아기 디코 봇")
+        
+    if content.startswith("!도움말"):
+        embed=discord.Embed(description="!자기소개\n!<이름>\n!음식\n!지도\n!레시피", color=0x00ff56)
+        embed.set_author(name="도움말")
+        await message.channel.send(embed=embed)
 
     if content.startswith("!이원찬"):
         embed=discord.Embed(description="https://dak.gg/bser/players/plati", color=0x00ff56)
         embed.set_author(name="plati")
         await message.channel.send(embed=embed)
-
+    
     if content.startswith("!최현영"):
         embed=discord.Embed(description="https://dak.gg/bser/players/light00", color=0x00ff56)
         embed.set_author(name="light00")
@@ -34,6 +39,11 @@ async def on_message(message):
     if content.startswith("!최승민"):
         embed=discord.Embed(description="https://dak.gg/bser/players/kokoakim", color=0x00ff56)
         embed.set_author(name="kokoakim")
+        await message.channel.send(embed=embed)
+    
+    if content.startswith("!김인서"):
+        embed=discord.Embed(description="https://dak.gg/bser/players/폰틱", color=0x00ff56)
+        embed.set_author(name="폰틱")
         await message.channel.send(embed=embed)
         
     if content.startswith("!음식"):
