@@ -1,5 +1,6 @@
 import discord
 import datetime
+import os
 
 client = discord.Client()
 
@@ -35,4 +36,5 @@ async def on_message(message):
         embed.set_author(name="kokoakim")
         await message.channel.send(embed=embed)
 
-client.run('ODcyMDc5Nzg1NDc4NzUwMjQ4.YQkplw.SWoH_BjjDjo2q0MECvBc7PVvTzc')
+access_token = os.environ['BOT_TOKEN']
+client.run(access_token)
