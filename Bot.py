@@ -20,6 +20,9 @@ async def on_message(message):
     if content.startswith("!자기소개"):
         await message.channel.send("응애 나 아기 디코 봇")
         
+    if content.startswith("!인백이의 드립은"):
+        await message.channel.send("개씹노잼입니다")
+        
     if content.startswith("!도움말"):
         embed=discord.Embed(description="!자기소개\n!<이름>\n!음식\n!지도\n!레시피", color=0x00ff56)
         embed.set_author(name="도움말")
