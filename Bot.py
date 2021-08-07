@@ -58,7 +58,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if content.startswith("!레시피"):
-        embed=discord.Embed(description="```힐링포션```\n난초 + 유리병\n난초 = 약초 + 꽃\n========================\n```구급상자```\n지혈제 + 붕대\n지혈제 = 알코올 + 붕대\n========================\n```생선튀김```\n붕어 + 뜨거운 오일\n뜨거운 오일 = 오일 + 라이터\n========================\n```감자튀김```\n감자 + 뜨거운 오일\n뜨거운 오일 = 오일 + 라이터\n========================\n```피쉬앤칩스```\n감자튀김 + 생선튀김", color=0x00ff56)
+        embed=discord.Embed(description="```fix\n힐링포션```\n난초 + 유리병\n난초 = 약초 + 꽃\n========================\n```구급상자```\n지혈제 + 붕대\n지혈제 = 알코올 + 붕대\n========================\n```생선튀김```\n붕어 + 뜨거운 오일\n뜨거운 오일 = 오일 + 라이터\n========================\n```감자튀김```\n감자 + 뜨거운 오일\n뜨거운 오일 = 오일 + 라이터\n========================\n```피쉬앤칩스```\n감자튀김 + 생선튀김", color=0x00ff56)
         embed.set_author(name="kokoakim")
         await message.channel.send(embed=embed)
 
