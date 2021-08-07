@@ -64,6 +64,7 @@ async def on_message(message):
         embed=discord.Embed(description="```fix\n힐링포션```\n난초 + 유리병\n난초 = 약초 + 꽃\n========================\n```fix\n구급상자```\n지혈제 + 붕대\n지혈제 = 알코올 + 붕대\n========================\n```fix\n생선튀김```\n붕어 + 뜨거운 오일\n뜨거운 오일 = 오일 + 라이터\n========================\n```fix\n감자튀김```\n감자 + 뜨거운 오일\n뜨거운 오일 = 오일 + 라이터\n========================\n```fix\n피쉬앤칩스```\n감자튀김 + 생선튀김", color=0x00ff56)
         embed.set_author(name="kokoakim")
         await message.channel.send(embed=embed)
+        
 
 access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
